@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde-lima: #a8e06a;
+  --verde-oscuro: #7ab51d;
+  --amarillo-limon: #f4d35e;
+  --blanco: #ffffff;
+  --gris-claro: #f0f0f0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  background-color: var(--verde-oscuro);
+}
+
+/* Estilos del navbar */
+.animacion {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700; /* Asegura que el pseudo-elemento esté alineado con el contenido */
+}
+
+.animacion::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Altura de la línea */
+  background-color: var(--amarillo-limon); /* Color de la línea */
+  transition: width 0.5s ease; /* Transición suave */
+}
+
+.animacion:hover::after {
+  width: 95%; /* Expande la línea al 100% del ancho del contenedor */
+}
+
+/* Estilos del carousel */
+.carousel-img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--blanco); /* Color del texto */
+}
+
+.titulo-principal {
+  font-weight: bold;
+  font-size: 2rem; /* Tamaño de fuente para h1 */
+  margin: 0;
+}
+
+.carousel-caption h2 {
+  font-size: 1.5rem; /* Tamaño de fuente para h2 */
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo-principal {
+    font-size: 1.2rem; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+  }
+  .carousel-caption h2 {
+    font-size: 1rem; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+  }
+}
+/* Estilos del section 2 */

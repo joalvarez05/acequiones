@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://acequiones.netlify.app//sitemap.xml
