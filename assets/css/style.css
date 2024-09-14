@@ -28,16 +28,19 @@
 .verde-oscuro {
   color: #00ae4d;
 }
-
 body {
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
-
+main {
+  flex-grow: 1;
+}
 nav {
   background-color: var(--gris-claro);
 }
-
 /* Estilos del navbar */
 .animacion {
   position: relative;
@@ -161,6 +164,70 @@ nav {
   color: var(--blanco);
 }
 
+/* Estilos pagina de error-404 */
+
+.error_logo {
+  width: 100px;
+  height: 100px;
+}
+.error_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.error_code {
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.error_code p {
+  font-size: 6rem;
+}
+
+.error_code p:first-of-type {
+  animation: fall 0.8s linear;
+  transform: rotateZ(-20deg);
+  color: rgb(14, 14, 14);
+}
+
+.error_code p:last-of-type {
+  animation: fall 1s linear;
+  transform: rotateZ(8deg);
+  color: rgb(14, 14, 14);
+}
+
+.error_code p:nth-of-type(2) {
+  color: var(--amarillo-limon);
+  animation: bounce 0.5s 1.2s linear forwards;
+  opacity: 0;
+}
+
+.error_title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 0 3%;
+  text-align: center;
+  color: var(--gris-claro);
+}
+
+.error_description {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 10%;
+  color: var(--gris-claro);
+}
+
+
 /* Estilos del icono fijo de WhatsApp */
 .icon-fixed {
   position: fixed;
@@ -185,5 +252,37 @@ nav {
 @media (max-width: 576px) {
   .carousel-caption h2 {
     font-size: 1rem;
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  40%,
+  75%,
+  95% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  15% {
+    transform: translateY(20px);
+  }
+  65% {
+    transform: translateY(95px);
+  }
+  85% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: rotateZ(25deg);
+    opacity: 1;
   }
 }
