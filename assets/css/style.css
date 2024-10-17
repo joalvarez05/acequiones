@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +12,13 @@
   --amarillo-limon: #ffd500;
   --blanco: #ffffff;
   --gris-claro: #e5e5e5;
+  --lavanda: #e6e6fa;
 }
 
 /* Colores principales */
 .amarillo-limon {
   color: #ffd500;
+  transition-duration: 0.2s;
 }
 
 .amarillo-limon:hover {
@@ -23,12 +27,19 @@
 
 .verde-lima {
   color: #a8e06a;
+  transition-duration: 0.2s;
+}
+
+.verde-lima:hover {
+  color: #94d648;
 }
 
 .verde-oscuro {
   color: #00ae4d;
 }
-
+.lavanda {
+  color: var(--lavanda);
+}
 body {
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -66,9 +77,15 @@ nav {
 }
 
 .img-brand {
-  width:auto;
+  width: auto;
   max-width: 100%;
   max-height: 40px;
+  transition-duration: 400ms;
+}
+
+.img-brand:hover {
+  transform: scale(1.2);
+  transition-duration: 400ms;
 }
 /* Estilos del carousel */
 .carousel-img {
@@ -236,7 +253,6 @@ nav {
   letter-spacing: 3px;
 }
 
-
 .contact-bg {
   background-image: url("../img/contact-img.jpg");
   background-size: cover;
@@ -350,6 +366,35 @@ nav {
   z-index: 11;
 }
 
+/* Footer */
+.links-footer {
+  text-decoration: none;
+  color: var(--blanco);
+transition-duration: 0.2s;
+}
+.links-footer:hover {
+color: var(--gris-claro);
+}
+
+
+.brand-dev {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+
+}
+.brand-dev:hover {
+  color:#292929;
+}
+.bg-footer-dev {
+  background-color: var(--gris-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Media queries correspondientes */
 
 @media (max-width: 768px) {
@@ -367,6 +412,9 @@ nav {
   }
   .mapaAcequiones {
     height: 175px;
+  }
+  .img-brand:hover {
+    transform: none;
   }
 }
 
