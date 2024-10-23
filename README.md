@@ -2,6 +2,6 @@ Project freelance in progress
 
 ***DEMO***
 
-https://acequiones-srl.netlify.app/
+https://acequiones.netlify.app/
 
 ***DEMO***
