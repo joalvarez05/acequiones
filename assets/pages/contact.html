@@ -12,6 +12,17 @@
       name="description"
       content="Acequiones es una empresa líder en la exportación de limones frescos de alta calidad. Proveemos limones premium desde Argentina a mercados internacionales como EE.UU. y Rusia, garantizando frescura y sabor natural en cada envío."
     />
+    <meta property="og:title" content="Acequiones - Exportación de Limones" />
+    <meta
+      property="og:description"
+      content="Producimos y exportamos los mejores limones. Conoce más sobre Acequiones."
+    />
+    <meta
+      property="og:image"
+      content="https://acequiones.netlify.app/assets/img/logos/logo-blanco-png.png
+    "
+    />
+    <meta property="og:url" content="https://acequiones.netlify.app/" />
     <link
       rel="icon"
       href="../img/logos/logo-blanco-svg.svg"
@@ -83,13 +94,12 @@
     </header>
     <main class="contact-bg">
       <section class="pt-4">
-        <div class="container">
-          <h1 class="text-center contacto-titulo">Contacto</h1>
+        <div class="container py-5">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-6 mb-4">
               <form data-netlify="true" method="post" id="contactForm">
                 <div>
-                  <label for="nombre" class="form-label">
+                  <label for="nombre" class="form-label ms-1 mt-1">
                     Nombre y apellido *</label
                   >
                   <input
@@ -105,7 +115,9 @@
                   />
                 </div>
                 <div>
-                  <label for="email" class="form-label"> Email *</label>
+                  <label for="email" class="form-label ms-1 mt-1">
+                    Email *</label
+                  >
                   <input
                     type="email"
                     id="email"
@@ -118,7 +130,9 @@
                   />
                 </div>
                 <div>
-                  <label for="telefono" class="form-label"> Telefono </label>
+                  <label for="telefono" class="form-label ms-1 mt-1">
+                    Telefono
+                  </label>
                   <input
                     type="tel"
                     id="telefono"
@@ -129,7 +143,7 @@
                   />
                 </div>
                 <div>
-                  <label for="consulta" class="form-label">
+                  <label for="consulta " class="form-label ms-1 mt-1">
                     Ingrese su consulta *
                   </label>
                   <textarea
@@ -142,7 +156,7 @@
                     title="Ingrese su consulta."
                   ></textarea>
                   <div id="passwordHelpBlock">
-                    <p class="form-text text-black">
+                    <p class="form-text text-black ms-1 mt-1">
                       Los campos con (*) son obligatorios
                     </p>
                   </div>
@@ -157,7 +171,39 @@
                 </button>
               </form>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6 ">
+              <div class="d-flex justify-content-center align-items-center mt-4">
+                <div class="">
+                  <i class="bi bi-envelope-at fs-1 amarillo-limon"></i>
+                </div>
+                <div class="ms-2 mt-1">
+                  <a
+                    href="https://acequiones-srl.netlify.app/"
+                    class="contacto-link h5"
+                    >acequiones.netlify.app</a
+                  >
+                  <p class="h5 contacto">empaque@acequiones.com</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center mt-4">
+                <div class="">
+                  <i class="bi bi-map fs-1 amarillo-limon"></i>
+                </div>
+                <div class="ms-2 mt-1">
+                  <p class="h5 contacto"> <span class="h6">CP T4128</span> Lules - Tucumán </p>
+                  <p class="h5 contacto">Dalmacio Quiles 302 </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center mt-4">
+                <div class="">
+                  <i class="bi bi-telephone-outbound fs-1 amarillo-limon"></i>
+                </div>
+                <div class="ms-2 mt-1">
+                  <p class="h5 contacto">+54 (381) 15063483</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d889.3514746335919!2d-65.33556556544157!3d-26.9223437983661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1727047501687!5m2!1ses-419!2sar"
                 class="mapaAcequiones"
@@ -173,14 +219,25 @@
     </main>
     <footer class="bg-dark text-white">
       <section class="container-fluid p-4">
+        
         <div class="row">
           <article class="col-12 col-md-4 col-lg-4 text-center p-2">
             <div>
               <ul class="list-unstyled">
                 <h5 class="fw-bold">Home</h5>
-                <li><a href="./sobre-nosotros.html" class="links-footer">Quiénes somos</a></li>
-                <li><a href="./contact.html" class="links-footer">Contactanos</a></li>
-                <li><a href="./sustentabilidad.html" class="links-footer">Sustentabilidad</a></li>
+                <li>
+                  <a href="./sobre-nosotros.html" class="links-footer"
+                    >Quiénes somos</a
+                  >
+                </li>
+                <li>
+                  <a href="./contact.html" class="links-footer">Contactanos</a>
+                </li>
+                <li>
+                  <a href="./sustentabilidad.html" class="links-footer"
+                    >Sustentabilidad</a
+                  >
+                </li>
               </ul>
             </div>
           </article>
@@ -188,9 +245,19 @@
             <div>
               <ul class="list-unstyled">
                 <h5 class="fw-bold">Nuestros servicios</h5>
-                <li><a href="./contact.html" class="links-footer">Exportación</a></li>
-                <li><a href="./contact.html" class="links-footer">Mercado Interno</a></li>
-                <li><a href="./contact.html" class="links-footer">Procesamiento</a></li>
+                <li>
+                  <a href="./contact.html" class="links-footer">Exportación</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="links-footer"
+                    >Mercado Interno</a
+                  >
+                </li>
+                <li>
+                  <a href="./contact.html" class="links-footer"
+                    >Procesamiento</a
+                  >
+                </li>
               </ul>
             </div>
           </article>
@@ -200,13 +267,15 @@
                 <h5 class="fw-bold">Seguinos</h5>
                 <li>
                   <a
-                    href="https://www.instagram.com/acequiones?igsh=MW5jNmI4MHB5dmI4eg==" target="_blank"
+                    href="https://www.instagram.com/acequiones?igsh=MW5jNmI4MHB5dmI4eg=="
+                    target="_blank"
                     class="bi bi-instagram lavanda fs-3"
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/people/Unifrutti-Argentina/100063048410912/" target="_blank"
+                    href="https://www.facebook.com/people/Unifrutti-Argentina/100063048410912/"
+                    target="_blank"
                     class="bi bi-facebook lavanda fs-3"
                   ></a>
                 </li>
