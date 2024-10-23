@@ -248,10 +248,20 @@ nav {
 
 /* Estilos de la pagina de contacto */
 
-.contacto-titulo {
+.contacto {
   color: white;
-  letter-spacing: 3px;
+  opacity: 1;
 }
+.contacto-link {
+  text-decoration: none;
+  color:var(--blanco);
+  transition-duration: 0.2s;
+
+}
+.contacto-link:hover {
+  color:var(--amarillo-limon)
+}
+
 
 .contact-bg {
   background-image: url("../img/contact-img.jpg");
@@ -286,7 +296,7 @@ nav {
 .mapaAcequiones {
   border: 0;
   width: 100%;
-  height: 380px;
+  height: 330px;
   border-radius: 8px;
   filter: brightness(80%);
   transition-duration: 0.3s;
