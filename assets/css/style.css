@@ -254,14 +254,12 @@ nav {
 }
 .contacto-link {
   text-decoration: none;
-  color:var(--blanco);
+  color: var(--blanco);
   transition-duration: 0.2s;
-
 }
 .contacto-link:hover {
-  color:var(--amarillo-limon)
+  color: var(--amarillo-limon);
 }
-
 
 .contact-bg {
   background-image: url("../img/contact-img.jpg");
@@ -285,7 +283,6 @@ nav {
   box-shadow: none;
 }
 
-/* Pagina de contacto */
 .text-area-consulta {
   resize: none;
   max-height: 80px !important;
@@ -316,6 +313,12 @@ nav {
   padding: 3rem;
 }
 
+.contact-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 /* Boton de submit de formulario de contacto */
 
 .btn-contacto {
@@ -380,12 +383,11 @@ nav {
 .links-footer {
   text-decoration: none;
   color: var(--blanco);
-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 .links-footer:hover {
-color: var(--gris-claro);
+  color: var(--gris-claro);
 }
-
 
 .brand-dev {
   font-family: "Playfair Display", serif;
@@ -394,10 +396,9 @@ color: var(--gris-claro);
   font-style: normal;
   text-decoration: none;
   color: #000;
-
 }
 .brand-dev:hover {
-  color:#292929;
+  color: #292929;
 }
 .bg-footer-dev {
   background-color: var(--gris-claro);
@@ -425,6 +426,12 @@ color: var(--gris-claro);
   }
   .img-brand:hover {
     transform: none;
+  }
+  .contact-mobile {
+    justify-content: flex-start;
+  }
+  .pad-mobile {
+    padding: 0px !important;
   }
 }
 
