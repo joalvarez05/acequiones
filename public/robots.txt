@@ -2,5 +2,7 @@ User-agent: *
 
 Disallow: /assets/pages/404
 Disallow: /admin/
+Allow: /googled888808f7a85a352.html
+
 
 Sitemap: https://acequiones.netlify.app/sitemap.xml

@@ -395,16 +395,18 @@ nav {
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
-  color: #000;
+  color: var(--blanco);
+  transition-duration: 0.2s;
 }
 .brand-dev:hover {
-  color: #292929;
+  color: var(--gris-claro);
 }
 .bg-footer-dev {
-  background-color: var(--gris-claro);
+  background-color: #272b30;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 /* Media queries correspondientes */
 
