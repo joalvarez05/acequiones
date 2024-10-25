@@ -435,6 +435,9 @@ nav {
   .pad-mobile {
     padding: 0px !important;
   }
+  .bi-telephone-outbound {
+    color: var(--verde-lima);
+  }
 }
 
 @keyframes fall {
