@@ -1,7 +1,4 @@
-Project freelance in progress
+> [!IMPORTANT]
+> DEMO:
+> https://acequiones.netlify.app/
 
-***DEMO***
-
-https://acequiones.netlify.app/
-
-***DEMO***
